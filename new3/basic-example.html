@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Bootsrap 4 Form</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    
+  <style>
+    body {
+      display: flex;
+      align-items: center;
+      min-height: 24em;
+      justify-content: center;
+    }
+  </style>
+</head>
+<body>
+
+  
+    
+    <div class="container">
+       <form action="" class="needs-validation" novalidate>
+           
+           <div class="form-group">
+              <label for="username">username:</label>
+              <input type="text" class="form-control" id="name" placeholder="username" required> 
+<!--               <div class="valid-feedback">Valid.</div>-->
+<!--               <div class="invalid-feedback">Please fill out username field.</div>-->
+           </div>
+        
+        <input type="submit" class="btn btn-primary" value="submit" >
+       </form>
+    
+        
+    </div>
+    
+    
+
+
+<script src="./dist/bootstrap-validate.js"></script>
+<script>
+  
+  bootstrapValidate('#name', 'min:5:Enter at least 5 charecters');
+//  bootstrapValidate('#input3', 'min:5:Enter min 5','max:7:Enter max 7');
+//  bootstrapValidate('#input4', 'required:please enter this field');     
+</script>
+</body>
+</html>
